@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simple Javascript Accordions - by www.dezinerfolio.com</title>
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family: verdana,arial,'sans serif';
+	font-size: 75%;
+	margin:10px;
+	color:#000080;
+}
+h1 {font-size:250%;}
+h2 {font-size:140%;}
+h3 {font-size:110%;}
+li{margin-left:10px;}
+ul{border: 1px;
+    border-radius: 3px 3px 3px 3px;
+    list-style: circle;
+    padding:10px;}
+div{background-color:#FFC887;
+border-radius:10px;}
+#basic-accordian{
+	border:5px solid #EEE;
+	padding:5px;
+	width:525px;
+	position:absolute;
+	left:35%;
+	top:50%;
+	margin-left:-175px;
+	z-index:2;
+	margin-top:-100px;
+}
+
+.accordion_headings{
+	padding:5px;
+	background:#D8AD8A; <!--original:#99CC00-->
+	color:#FFFFFF;
+	border:1px solid #FFF;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+.accordion_headings:hover{
+	background:#738BAF; <!--original:#00CCFF-->
+}
+
+.accordion_child{
+	padding:15px;
+	background:#EEE;
+}
+
+.header_highlight{
+	background:#738BAF; <!--original:#00CCFF-->
+}
+
+</style>
+<script type="text/javascript" src="accordian.pack.js"></script>
+</head>
+<body onload="new Accordian('basic-accordian',5,'header_highlight');">
+
+
+<div id="basic-accordian" ><!--Parent of the Accordion-->
+
+
+<div style="width:125px; float:left">
+  <div id="test1-header" class="accordion_headings header_highlight" >2010</div>
+  <div id="test2-header" class="accordion_headings" >2011</div>
+  <div id="test3-header" class="accordion_headings" >2012</div>
+  <div id="test4-header" class="accordion_headings" >2013</div>
+  <div id="test5-header" class="accordion_headings" >2014</div>
+</div>
+
+<div style="float:right; width:400px;">
+  <div id="test1-content"><!--2010-->
+	<div class="accordion_child">
+		I started my first blog in 2010, you can read the whole thing <a href="http://wogsland.org/alora/blog/2010_blog.html">here</a>.
+    </div>
+  </div>
+  
+  <div id="test2-content"><!--2011-->
+	<div class="accordion_child">
+	I didn't blog at all in 2011.
+    </div>
+  </div>
+  
+  <div id="test3-content"><!--2012-->
+	<div class="accordion_child">
+		<h4>September</h4>
+		<ul>
+			<li><a href="http://wogsland.org/alora/blog/2012/09/25dear-parents.html"></a>
+			<li><a href="http://wogsland.org/alora/blog/2012/09/26dear-parents.html"></a>
+			<li><a href="http://wogsland.org/alora/blog/2012/09/28dear-parents.html"></a>
+			<li><a href="http://wogsland.org/alora/blog/2012/09/28hola-padres.html"></a>
+			<li><a href="http://wogsland.org/alora/blog/2012/09/28post3.html"></a>
+			<li><a href="http://wogsland.org/alora/blog/2012/09/29Morning-family.html"></a>
+			<li><a href="http://wogsland.org/alora/blog/2012/09/30burnt-arm.html"></a>
+			<li><a href="http://wogsland.org/alora/blog/2012/09/30dnd-module.html"></a>
+			<li><a href="http://wogsland.org/alora/blog/2012/09/30guten-morgen.html"></a>
+		</ul>
+	</div>
+  </div>
+  <div id="test4-content"><!--2013-->
+	<div class="accordion_child">
+    	Welcome to the Homepage<br /><br />Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc sapien nibh, ultrices vitae, convallis eu, semper ut, leo. Cras nec pede.
+    </div>
+  </div>
+  <div id="test5-content"><!--2014-->
+	<div class="accordion_child">
+    	Welcome to the Homepage<br /><br />Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc sapien nibh, ultrices vitae, convallis eu, semper ut, leo. Cras nec pede.
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div><!--End of accordion parent-->
+
+
+
+
+
+</body>
+</html>
